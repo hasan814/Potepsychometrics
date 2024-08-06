@@ -3,9 +3,43 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --dark-bg: #000;
+  --light-bg: #f6f7fb;
+  --primary-color: linear-gradient(
+    to right rgba(173, 83, 137),
+    rgb(60, 16, 83)
+  );
+  --secondary-color: #02c4ff;
+  --third-color: #f3ef54;
+  --fourth-color: #fee590;
+  --text-color: #fff;
+  --text-secondary: #554b92;
+  --text-color-dark: #12183f;
+  --text-color-light: #fcf3d4;
+  --title-color: #fff;
+  --border-color: #e6e3ff;
+  --border-color-dark: #27263a;
+  --border-color-light: #55ddf8;
+  --shadow: 10px 12px 48px rgba(181, 187, 203, 0.206);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    rgb(173, 83, 137),
+    rgb(60, 16, 83)
+  ) !important;
+  color: var(--text-color);
+  margin: 0 !important;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 !important;
+  touch-action: pan-x pan-y;
+  transition: all 0.4s cubic-bezier(0.57, 0.25, 0.33, 1) 0s;
 }
 
 @media (prefers-color-scheme: dark) {
