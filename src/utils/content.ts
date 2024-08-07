@@ -15,3 +15,9 @@ export const features = [
     { icon: "/features/Frame-4.png", title: "Custom Timing Services" },
     { icon: "/features/Frame-5.png", title: "Language Translation" },
 ]
+
+export const services = [
+    { icon: "/products/Frame-0.png", title: "Psychological Assessments", des: "Our advanced tools provide precise psychological evaluations, helping professionals understand their clients better." },
+    { icon: "/products/Frame-1.png", title: "Training and Workshops", des: "We offer training sessions and workshops to help you make the most of our tools." },
+    { icon: "/products/Frame-2.png", title: "Consultation Services", des: "Get expert advice on how to integrate Potepsycholometrics into your practice." },
+]

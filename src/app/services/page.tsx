@@ -1,7 +1,8 @@
+import ServicesPage from "@/templates/ServicesPage/ServicesPage";
 import React from "react";
 
 const Services = () => {
-  return <div>Services</div>;
+  return <ServicesPage />;
 };
 
 export default Services;
