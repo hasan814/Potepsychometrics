@@ -1,7 +1,7 @@
-export const containerVariants = (delay = 0) => ({
+export const containerVariants = {
     "offscreen": { opacity: 0, y: 30 },
-    "onscreen": { opacity: 1, y: 0, transition: { type: "spring", duration: 2, delay } }
-})
+    "onscreen": { opacity: 1, y: 0, transition: { type: "spring", duration: 2, delay: 0 } }
+}
 
 export const tagVariants = {
     "offscreen": { opacity: 0, y: 10 },
@@ -17,3 +17,4 @@ export const desVariants = {
     "offscreen": { opacity: 0, y: 20 },
     "onscreen": { opacity: 1, y: 0, transition: { type: "spring", duration: 2.6, delay: 0.2 } }
 }
+

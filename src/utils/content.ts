@@ -6,3 +6,12 @@ export const HomeData = [
     { src: '/hero/person5.jpg', bg: '#b4dadd', delay: 0.3 },
     { src: '/hero/person6.jpg', bg: '#ebb0cb', delay: 0.25 },
 ]
+
+export const features = [
+    { icon: "/features/Frame-0.png", title: "Save on Acquisition" },
+    { icon: "/features/Frame-1.png", title: "Increase Trust Market" },
+    { icon: "/features/Frame-2.png", title: "Social Media Influence" },
+    { icon: "/features/Frame-3.png", title: "Live Visitor Count" },
+    { icon: "/features/Frame-4.png", title: "Custom Timing Services" },
+    { icon: "/features/Frame-5.png", title: "Language Translation" },
+]
