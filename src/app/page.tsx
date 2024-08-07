@@ -1,7 +1,13 @@
-import React from "react";
+import ClientVideo from "@/modules/ClientVideo/ClientVideo";
+import HomePage from "@/templates/HomePage/HomePage";
 
 const Home = () => {
-  return <div className="app"></div>;
+  return (
+    <>
+      <HomePage />
+      <ClientVideo />
+    </>
+  );
 };
 
 export default Home;

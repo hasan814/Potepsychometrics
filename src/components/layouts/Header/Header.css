@@ -63,13 +63,14 @@
   }
   .nm-menu {
     left: 0;
-    top: 4rem;
+    top: 5rem;
     display: flex;
     position: fixed;
     padding: 3rem 2rem;
     box-sizing: border-box;
     background-image: linear-gradient(
-      to right rgb(173, 83, 137),
+      to right,
+      rgb(173, 83, 137),
       rgb(60, 16, 83)
     );
     width: 100%;
