@@ -29,7 +29,7 @@
       "@/modules/*": ["src/components/modules/*"],
       "@/templates/*": ["src/components/templates/*"],
       "@/icons/*": ["src/components/icons/*"],
-      "@/layout/*": ["src/components/layout/*"]
+      "@/layouts/*": ["src/components/layouts/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
