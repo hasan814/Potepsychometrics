@@ -38,7 +38,9 @@
 .copy {
   color: #fff;
 }
-
+.title {
+  text-align: center;
+}
 @media (max-width: 990px) {
   .f-menu {
     gap: 2rem;

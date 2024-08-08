@@ -1,19 +1,32 @@
 "use client";
 
+import {
+  motion,
+  useMotionValue,
+  useMotionValueEvent,
+  useScroll,
+} from "framer-motion";
 import { BiMenuAltRight } from "react-icons/bi";
+import { RxCross1 } from "react-icons/rx";
+import { useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+
 import "./Header.css";
-import { RxCross1 } from "react-icons/rx";
 
 const Header: React.FC = () => {
   // ============ State =============
   const [mobileMenuOpened, setMobileMenuOpened] = useState<boolean>(false);
-
+  const [navStyle, setNavStyle] = useState("");
+  const { scrollYProgress } = useScroll();
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    if (latest > 0.2) setNavStyle("n-sticky");
+    else setNavStyle("");
+  });
   // ============ Rendering =============
   return (
-    <div className="n-wrapper">
+    <div className={`n-wrapper ${navStyle}`}>
       {/* Desktop Version*/}
       <div className="container">
         <div className="n-container">
@@ -67,12 +80,30 @@ const Header: React.FC = () => {
               : "translateX(-150%)",
           }}
         >
-          <Link href={"/"}>Home</Link>
-          <Link href={"/aboutus"}>About Us</Link>
-          <Link href={"/services"}>Services</Link>
-          <Link href={"/testimonials"}>Testimonials</Link>
-          <Link href={"/contact"}>Contact Us</Link>
-          <div className="m-signup-button">Sign Up</div>
+          <Link href={"/"} onClick={() => setMobileMenuOpened(false)}>
+            Home
+          </Link>
+          <Link href={"/aboutus"} onClick={() => setMobileMenuOpened(false)}>
+            About Us
+          </Link>
+          <Link href={"/services"} onClick={() => setMobileMenuOpened(false)}>
+            Services
+          </Link>
+          <Link
+            href={"/testimonials"}
+            onClick={() => setMobileMenuOpened(false)}
+          >
+            Testimonials
+          </Link>
+          <Link href={"/contact"} onClick={() => setMobileMenuOpened(false)}>
+            Contact Us
+          </Link>
+          <div
+            className="m-signup-button"
+            onClick={() => setMobileMenuOpened(false)}
+          >
+            Sign Up
+          </div>
         </div>
       </div>
     </div>

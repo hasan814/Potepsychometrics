@@ -44,6 +44,16 @@
   border-radius: 999px;
 }
 
+.n-sticky {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+}
+
+.n-sticky .n-container {
+  color: var(--light-bg);
+}
+
 .nm-container {
   display: none;
 }
