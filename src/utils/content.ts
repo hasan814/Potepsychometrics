@@ -21,3 +21,36 @@ export const services = [
     { icon: "/products/Frame-1.png", title: "Training and Workshops", des: "We offer training sessions and workshops to help you make the most of our tools." },
     { icon: "/products/Frame-2.png", title: "Consultation Services", des: "Get expert advice on how to integrate Potepsycholometrics into your practice." },
 ]
+
+export const testimonialsData = [
+    {
+        comment: "Potepsychometrics has transformed the way we approach psychological evaluation. Their tools are precise and easy to use.",
+        name: "John Doe",
+        profession: "Clinical Psychologist"
+    },
+    {
+        comment: "The insights provided by Potepsychometrics have been invaluable in our recruitment process. Highly recommended!",
+        name: "Jane Smith",
+        profession: "HR Manager"
+    },
+    {
+        comment: "Using Potepsychometrics has significantly improved our understanding of employee satisfaction and well-being.",
+        name: "Alice Johnson",
+        profession: "Organizational Psychologist"
+    },
+    {
+        comment: "Potepsychometrics offers innovative solutions that have helped our team develop better training programs.",
+        name: "Michael Brown",
+        profession: "Training and Development Specialist"
+    },
+    {
+        comment: "The accuracy and depth of the assessments provided by Potepsychometrics are unmatched. A great tool for any professional.",
+        name: "Emily Davis",
+        profession: "Educational Consultant"
+    },
+    {
+        comment: "Potepsychometrics has been a game-changer for our practice. The detailed reports help us provide better care for our patients.",
+        name: "Robert Wilson",
+        profession: "Psychotherapist"
+    }
+];

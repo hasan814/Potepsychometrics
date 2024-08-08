@@ -1,0 +1,29 @@
+.t-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  flex: 1;
+}
+.t-head {
+  display: flex;
+  flex-direction: column;
+  gap: 1;
+  align-items: center;
+  max-width: 50rem;
+}
+
+.tag {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.des {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  line-height: 2rem;
+  padding: 2rem;
+  text-align: justify;
+  border-radius: 2rem;
+}

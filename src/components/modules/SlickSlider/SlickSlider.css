@@ -1,0 +1,157 @@
+.slick-slider {
+  margin-top: 5rem;
+}
+
+.slick-track {
+  padding: 4rem 0;
+}
+
+.slick-slide > div {
+  padding: 0 1.2rem;
+}
+
+.slick-dots {
+  bottom: 0 !important;
+}
+
+.testimonial-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.c-content {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.c-content span {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.c-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.c-avatar {
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  display: flex;
+  font-size: 1.1rem;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 255, 0.3); /* Changed color to improve visibility */
+}
+
+.c-person {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.c-person > :nth-child(1) {
+  font-weight: bold;
+}
+
+.c-person > :nth-child(2) {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.comment {
+  gap: 3rem;
+  display: flex;
+  padding: 2rem;
+  position: relative;
+  border-radius: 1.2rem;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #fff !important;
+}
+
+.slick-slide.slick-active.slick-current + .slick-slide .comment {
+  transition: all 1000ms ease-out;
+  transform: scale(1.1) translateY(-30px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .testimonial-slider {
+    padding: 30px 15px;
+  }
+
+  .c-content span {
+    font-size: 0.9rem;
+  }
+
+  .c-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+  .comment {
+    background-color: red;
+    width: 75%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .slick-slide > div {
+    padding: 0 0.6rem;
+  }
+
+  .testimonial-slider {
+    padding: 20px 10px;
+  }
+
+  .c-content span {
+    font-size: 0.9rem;
+  }
+
+  .c-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .comment {
+    padding: 1.5rem;
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-slide > div {
+    padding: 0 0.4rem;
+  }
+
+  .testimonial-slider {
+    padding: 20px 5px;
+  }
+
+  .c-content span {
+    font-size: 0.8rem;
+  }
+
+  .c-avatar {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .comment {
+    padding: 1rem;
+  }
+}

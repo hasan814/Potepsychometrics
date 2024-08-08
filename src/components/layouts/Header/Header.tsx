@@ -25,11 +25,11 @@ const Header: React.FC = () => {
           </div>
           <div className="n-right">
             <div className="n-menu">
+              <Link href={"/"}>Home</Link>
               <Link href={"/aboutus"}>About Us</Link>
               <Link href={"/services"}>Services</Link>
-              <Link href={"/blog"}>Blog</Link>
-              <Link href={"/contact"}>Contact Us</Link>
               <Link href={"/testimonials"}>Testimonials</Link>
+              <Link href={"/contact"}>Contact Us</Link>
             </div>
             <div className="signup">Sign Up</div>
           </div>
@@ -67,11 +67,11 @@ const Header: React.FC = () => {
               : "translateX(-150%)",
           }}
         >
+          <Link href={"/"}>Home</Link>
           <Link href={"/aboutus"}>About Us</Link>
           <Link href={"/services"}>Services</Link>
-          <Link href={"/blog"}>Blog</Link>
-          <Link href={"/contact"}>Contact Us</Link>
           <Link href={"/testimonials"}>Testimonials</Link>
+          <Link href={"/contact"}>Contact Us</Link>
           <div className="m-signup-button">Sign Up</div>
         </div>
       </div>
