@@ -1,17 +1,28 @@
-"use client";
+import Subscribe from "@/modules/Subscribe/Subscribe";
+import Link from "next/link";
 
-import React from "react";
+import "./Footer.css";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="mx-auto px-4">
-        <div className="flex flex-wrap justify-between items-center">
-          <h2 className="text-xl font-bold">Potepsychometrics</h2>
-          <p>&copy; {new Date().getFullYear()} All rights reserved</p>
+    <div className="f-wrapper">
+      <div className="container">
+        <div className="f-container">
+          <span className="title">Get Potepsychomerics Today!</span>
+          <Subscribe />
+          <hr />
+          <div className="f-menu">
+            <Link href={"/"}>Home</Link>
+            <Link href={"/aboutus"}>About Us</Link>
+            <Link href={"/services"}>Services</Link>
+            <Link href={"/testimonial"}>Testimonials</Link>
+            <Link href={"/contact"}>Contact Us</Link>
+          </div>
+          <hr />
+          <span className="copy">&copy; All right reserved</span>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

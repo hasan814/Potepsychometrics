@@ -1,0 +1,36 @@
+.s-sub {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  width: 70%;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.s-sub > input {
+  outline: none;
+  border: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: rgb(150, 150, 150);
+  flex: 1;
+  font-family: "Sen";
+}
+
+.s-sub > input::placeholder {
+  font-size: 0.8rem;
+}
+
+.subscribe-now {
+  height: 80%;
+  right: 0.5rem;
+  display: flex;
+  padding: 0rem 2rem;
+  position: absolute;
+  align-items: center;
+  border-radius: 999px;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}

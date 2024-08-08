@@ -1,0 +1,48 @@
+.f-wrapper .container {
+  padding: 5rem 0 2rem 0;
+}
+
+.f-wrapper {
+  background-color: rgb(60, 16, 83);
+}
+
+.f-container {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.f-container .title {
+  color: #fff;
+}
+
+.f-container hr {
+  border-color: var(--border-color-light);
+  width: 100%;
+}
+
+.f-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.f-menu a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.copy {
+  color: #fff;
+}
+
+@media (max-width: 990px) {
+  .f-menu {
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
