@@ -9,16 +9,16 @@ const ContactUsPage = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  const handleChange = (event: any) => {
+    const { name, value } = event.target;
     setFormData({
       ...formData,
       [name]: value,
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
     // Handle form submission logic here
     console.log("Form data submitted:", formData);
   };
@@ -73,7 +73,6 @@ const ContactUsPage = () => {
               value={formData.message}
               onChange={handleChange}
               className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-              rows="4"
             ></textarea>
           </div>
           <div>
