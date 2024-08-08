@@ -28,11 +28,12 @@ html {
 }
 
 body {
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgb(173, 83, 137),
     rgb(60, 16, 83)
-  ) !important;
+  ) !important; */
+  background: url("/register/1.jpg") center/cover fixed no-repeat;
   color: var(--text-color);
   margin: 0 !important;
   max-width: 100%;

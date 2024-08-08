@@ -21,7 +21,7 @@ const Header: React.FC = () => {
   const [navStyle, setNavStyle] = useState("");
   const { scrollYProgress } = useScroll();
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    if (latest > 0.2) setNavStyle("n-sticky");
+    if (latest > 0.1) setNavStyle("n-sticky");
     else setNavStyle("");
   });
   // ============ Rendering =============
@@ -44,7 +44,9 @@ const Header: React.FC = () => {
               <Link href={"/testimonials"}>Testimonials</Link>
               <Link href={"/contact"}>Contact Us</Link>
             </div>
-            <div className="signup">Sign Up</div>
+            <div className="signup">
+              <Link href={"/register"}>Regsiter</Link>
+            </div>
           </div>
         </div>
       </div>
@@ -98,12 +100,14 @@ const Header: React.FC = () => {
           <Link href={"/contact"} onClick={() => setMobileMenuOpened(false)}>
             Contact Us
           </Link>
-          <div
-            className="m-signup-button"
+
+          <Link
+            href={"register"}
+            className="m-signup-button text-black"
             onClick={() => setMobileMenuOpened(false)}
           >
-            Sign Up
-          </div>
+            Regsiter
+          </Link>
         </div>
       </div>
     </div>
